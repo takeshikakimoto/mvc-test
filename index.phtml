@@ -18,7 +18,7 @@
     <button type="button" id="main_button">送信する</button>
 
 
-    <div class="text">メッセージ</div>
+    <div class="text">メッセージ!</div>
     <textarea class="textarea" type="text" name="text" value=""></textarea>
 
 
@@ -32,19 +32,22 @@
             <button type="button">戻る</button>
         </div>
     </div>
+    <?php
+//    try {$pdo = new PDO("mysql:host=localhost;dbname=board_test;charset=utf8", "root", "");
+//        $sql = "SELECT * FROM board";
+//        $stmt = $pdo->query($sql);
+//    } catch (PDOException $e) {
+//
+//        echo 'データベースにアクセスできません！';
+//        exit;
+//
+//    }
+
+    ?>
 
     <?php
-    try {$pdo = new PDO("mysql:host=localhost;dbname=board_test;charset=utf8", "root", "");
-        $sql = "SELECT * FROM board";
-        $stmt = $pdo->query($sql);
-    } catch (PDOException $e) {
-
-        echo 'データベースにアクセスできません！';
-        exit;
-
-    }
-    ?>
-    <?php foreach($stmt as $row) { ?>
+    $hoge?>
+    <?php foreach($hoge as $row) { ?>
 
         <div class="box1">
             <a class="green"><?php echo $row["title"]?></a>
