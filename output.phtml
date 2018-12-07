@@ -44,16 +44,20 @@
 //}
 //
 ?>
+<?php
+if (count($error) > 0){
+foreach($error as $errorms)
+print ("警告：$errorms");
+print ("戻ってください：<a href = /phalcon-a/index/index> トップへ </a>");
+}
+?>
+
 <?php if (count($error) == 0){
-
-
-
-
     print ("タイトル：$title<br />");
     print ("お名前：$name<br />");
     print ("メッセージ：$text<br />");
     print ("日付：$date<br />");
-    print ("<a href = \"http://localhost/board_input.php\"> トップへ </a>");}
+    print ("<a href = /phalcon-a/index/index> トップへ </a>");}
 ?>
 
 

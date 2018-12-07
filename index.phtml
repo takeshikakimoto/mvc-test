@@ -6,7 +6,7 @@
     <title>掲示板α</title>
 </head>
 <body>
-<form action="board_output.php" method="post">
+<form action="output" method="post">
 
     <a class="name">お名前</a>
     <input class="namearea" type="text" name="name" value="">
@@ -15,8 +15,8 @@
     <input class="titlearea" type="text" name="title" value="">
 
 
-    <button type="button" id="main_button">送信する</button>
-
+<!--    <button type="button" id="main_button">送信する</button>-->
+    <input type="submit" value="投稿する">
 
     <div class="text">メッセージ!</div>
     <textarea class="textarea" type="text" name="text" value=""></textarea>
@@ -25,13 +25,13 @@
     <div class="modal">
         <div class="modal_wrapper">
 
-        </div>
-        <div class="modal_content">
-            <p>本当に投稿しますか？</p>
-            <input type="submit" value="投稿する">
-            <button type="button">戻る</button>
-        </div>
-    </div>
+<!--        </div>-->
+<!--        <div class="modal_content">-->
+<!--            <p>本当に投稿しますか？</p>-->
+<!--            <input type="submit" value="投稿する">-->
+<!--            <button type="button">戻る</button>-->
+<!--        </div>-->
+<!--    </div>-->
     <?php
 //    try {$pdo = new PDO("mysql:host=localhost;dbname=board_test;charset=utf8", "root", "");
 //        $sql = "SELECT * FROM board";
@@ -45,8 +45,7 @@
 
     ?>
 
-    <?php
-    $hoge?>
+
     <?php foreach($hoge as $row) { ?>
 
         <div class="box1">
